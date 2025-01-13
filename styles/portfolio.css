@@ -1,41 +1,56 @@
-
-
-
 .open-sans-normal {
     font-family: "Open Sans", serif;
     font-optical-sizing: auto;
     font-style: normal;
     font-variation-settings:
-      "wdth" 100;
-  }
+        "wdth" 100;
+}
 
-  /* shared style */
-  .text-primary{
+/* shared style */
+
+.secondary-bg {
+    background-color: #fff8f3;
+}
+
+.text-primary {
     color: #FD6E0A;
-  }
+}
 
-  .btn-primary{
+.btn-primary {
     background-color: #FD6E0A;
     font-size: 20px;
     font-weight: bold;
-    color:white;
+    color: white;
     padding: 18px 35px;
     border-radius: 5px;
     border: none;
-  }
+}
 
 
-  .dark-1{
+.dark-1 {
     color: #181818;
 }
 
 
-.dark-2{
+.dark-2 {
     color: #474747;
 }
 
-.dark-{
+.dark- {
     color: #757575;
+}
+
+
+.section-title {
+    font-size: 35px;
+    font-weight: bold;
+    color: #181818;
+}
+
+.section-description {
+    font-size: 18px;
+    color: #757575;
+
 }
 
 /* Nav Styles */
@@ -44,26 +59,27 @@
 nav {
     display: flex;
     align-items: center;
-   justify-content: space-between;
-   margin: 0px 200px;
+    justify-content: space-between;
+    margin: 0 200px;
 }
 
-nav ul{
+nav ul {
     display: flex;
     align-items: center;
 }
 
-.nav-title{
+.nav-title {
     font-weight: 800;
     font-size: 45px;
 }
 
-nav ul li{
+nav ul li {
     list-style: none;
     margin-right: 50px;
 
 }
-nav li a{
+
+nav li a {
     text-decoration: none;
     font-size: 20px;
     color: #020202;
@@ -71,37 +87,148 @@ nav li a{
 
 
 /* Header Style */
-.header{
+.header {
     background-image: url('../images/developer.png'), url('../images/header_bg.png');
     background-repeat: no-repeat;
     background-position: top left, bottom right;
 }
 
+/* main style */
+main {
+    max-width: 1140px;
+    margin: 0px auto;
+}
+
+main section {
+    margin-top: 130px;
+    margin-bottom: 130px;
+}
 
 
 /* Banner Style */
 
-.banner{
+.banner {
     display: flex;
     justify-content: space-between;
-    margin: 0 35px 0 230px;
+    margin: 0 35px 0 200px;
 }
-.banner-content{
+
+.banner-content {
     max-width: 580px;
 }
 
-.banner-greetings{
+.banner-greetings {
     font-size: 45px;
     font-weight: 600px;
     color: #474747;
 }
 
-.banner-title{
-font-weight: bold;
-font-size: 85px;
+.banner-title {
+    font-size: 85px;
+    font-weight: bold;
+
 }
 
-.banner-profile-pic{
+.banner-profile-pic {
     width: 580px;
 
+}
+
+
+
+/* About Style */
+.about {
+    border-radius: 10px;
+    padding: 130px 150px;
+    text-align: center;
+    margin-top: 130px;
+}
+
+.about-items {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+
+
+.item-descriptions {
+    font-weight: bold;
+}
+
+.skills-container {
+    display: flex;
+    gap: 24px;
+
+}
+
+.skills {
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+
+}
+
+.resume-title {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 113px;
+}
+
+.resume-container {
+    display: flex;
+    gap: 24px;
+}
+
+.exprience-title{
+    font-size: 25px;
+    font-weight: 700;
+
+}
+
+
+.experience-subtitle {
+    font-size: 16px;
+    font-weight: 600;
+    color: #757575;
+    margin-bottom: 20px;
+}
+
+.experience-description{
+    font-size: 16px;
+    font-weight: 400;
+    color: #757575;
+}
+
+.cv-button {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+footer{
+    display: flex;
+    padding: 130px 230px;
+    gap: 100px;
+}
+
+.footer-column{
+    width: 50%;
+}
+
+footer input[type="text"], footer input[type="email"], footer textarea{
+    height: 64px;
+    border-radius: 5px;
+    background-color: white;
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    margin: 24px;
+    border: none;
+}
+
+.textfeild {
+    width: 461px;
+    height: 180px;
 }
