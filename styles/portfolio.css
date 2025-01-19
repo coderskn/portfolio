@@ -160,7 +160,6 @@ main section {
 .skills-container {
     display: flex;
     gap: 24px;
-
 }
 
 .skills {
@@ -169,6 +168,14 @@ main section {
     box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
 
 }
+.skills-section-title{
+    font-size: 40px;
+    text-align: center;
+}
+
+
+
+
 
 .resume-title {
     font-size: 35px;
@@ -224,11 +231,35 @@ footer input[type="text"], footer input[type="email"], footer textarea{
     display: block;
     width: 100%;
     padding: 10px 20px;
-    margin: 24px;
+    margin-bottom: 24px;
     border: none;
 }
 
 .textfeild {
     width: 461px;
     height: 180px;
+}
+
+
+/* Responsive Media Query */
+.hide{
+    display: none;
+}
+
+@media screen and (max-width: 576px) {
+    .skills-container, .resume-container, footer, .about-items{
+        flex-direction: column;
+    }
+    footer, .about{
+        padding: 20px;
+    }
+
+    .footer-column{
+        width: 100%;
+    }
+
+    footer input[type="text"], footer input[type="email"], footer textarea{
+        width: calc(100% - 40px);
+     }
+
 }
